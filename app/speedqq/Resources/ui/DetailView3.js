@@ -32,37 +32,18 @@ function DetailView() {
 	
 	var labelImage = Ti.UI.createLabel({
 			text:"",
-			backgroundImage:'images/kfc10.png',
+			backgroundImage:'images/bsninfo.png',
 			top:0,
 			width:"100%",
 			height:500,
 		});
 	
-	self.add(labelImage);
+		self.add(labelImage);
 	var locationButton = Ti.UI.createButton({
 		text:'Open Location', bottom:0, width:"100%",title:"Open Location"
 		});
 	self.add(locationButton);
 	
-
-	// var key = Ti.App.Properties.getInt(num);
-	// var db = Ti.Database.install('db/queueDB.sqlite','queueDB');
-// 	
-	// var db = Ti.Database.open('queueDB');
-// 	
-	// db.execute('BEGIN');
-// 
-	// var num =  db.execute('SELECT NUM FROM KFC where SEQ =' + key);
-// 	
-	// var numberOfCus = Ti.UI.createLabel({text:'Number of customer :' + num + '/50', bottom:50, width:"100%"});
-// 
-		// key = key +1;
-		// if(key>3)
-			// key = 1;
-// 		
-	// Ti.App.Properties.setInt('num', key);
-// 
-	// self.add(numberOfCus);
 	function doSomething(e) {
 		var MapView = require('MapView');
 		var mapView = MapView();

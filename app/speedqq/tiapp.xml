@@ -5,7 +5,7 @@
     <version>1.0</version>
     <publisher>vvcaca</publisher>
     <url>http://</url>
-    <description/>
+    <description>undefined</description>
     <copyright>2015 by vvcaca</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
@@ -39,15 +39,14 @@
         </plist>
     </ios>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-    
-    <manifest>
+        <manifest>
             <application>
                 <!-- Replace "PASTE YOUR GOOGLE MAPS API KEY HERE" with the Google API key you obtained -->
-                <meta-data android:name="com.google.android.maps.v2.API_KEY"
-                    android:value="AIzaSyARa3ag2uRRW-1Nu7sYKBQ3dmcV_lSW_yU"/>
+                <meta-data
+                    android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyARa3ag2uRRW-1Nu7sYKBQ3dmcV_lSW_yU"/>
             </application>
         </manifest>
-      </android>
+    </android>
     <mobileweb>
         <precache/>
         <splash>
@@ -85,4 +84,6 @@
     <property name="acs-password-production" type="string">tyiATkWLZfKnvHz0Cj</property>
     <property name="appc-org-id" type="string">100055468</property>
     <property name="appc-creator-user-id" type="string">3badb550-e645-45c6-81b5-1afac7fce53d</property>
+    <property name="num" type="int">1</property>
+
 </ti:app>

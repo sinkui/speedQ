@@ -16,7 +16,7 @@ var win1 = Titanium.UI.createWindow({
 });
 var tab1 = Titanium.UI.createTab({  
     icon:'KS_nav_views.png',
-    title:'My Map',
+    title:'Nearby',
     window:win1
 });
 
@@ -32,26 +32,26 @@ var MasterView = require('ui/MasterView'),
 		//create detail view container
 		var detailView = DetailView();
 		var detailContainerWindow = Ti.UI.createWindow({
-			title:'Product Details',
+			title:'Space Details',
 			navBarHidden:false,
 			backgroundColor:'#ffffff'
 		});
 		detailContainerWindow.add(detailView);
-		detailView.fireEvent('itemSelected',e);
+		//detailView.fireEvent('itemSelected',e);
 		detailContainerWindow.open();
 	});
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
+// var label1 = Titanium.UI.createLabel({
+	// color:'#999',
+	// text:'I am Window 1',
+	// font:{fontSize:20,fontFamily:'Helvetica Neue'},
+	// textAlign:'center',
+	// width:'auto'
+// });
+// 
+// win1.add(label1);
 
-win1.add(label1);
-
-//
+//f
 // create controls tab and root window
 //
 var win2 = Titanium.UI.createWindow({  
@@ -60,7 +60,7 @@ var win2 = Titanium.UI.createWindow({
 });
 var tab2 = Titanium.UI.createTab({  
     icon:'KS_nav_ui.png',
-    title:'My Queue',
+    title:'My Map',
     window:win2
 });
 // 
@@ -116,20 +116,33 @@ var win3 = Titanium.UI.createWindow({
 });
 var tab3 = Titanium.UI.createTab({  
     icon:'KS_nav_ui.png',
-    title:'Profit',
+    title:'Bookmark',
     window:win3
 });
 
-var label3 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 3',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
+var bookmark1 = Ti.UI.createLabel({text:"",backgroundImage: 'ui/images/NZ Curry.png',top:0,height:75, text:'', width:"100%"});
+var bookmark2 = Ti.UI.createLabel({text:"",backgroundImage: 'ui/images/Starbucks.png',top:75,height:75, text:'', width:"100%"});
+var bookmark3 = Ti.UI.createLabel({text:"",backgroundImage: 'ui/images/BSN.png',top:150,height:75, text:'', width:"100%"});
 
-win3.add(label3);
+	win3.add(bookmark1);
+	win3.add(bookmark2);
+	win3.add(bookmark3);
 
+// function moredetails(e) {
+		// var DetailView = require('ui/DetailView');
+		// var detailView = DetailView();
+		// var detailContainerWindow = Ti.UI.createWindow({
+			// title:'BookMark Details',
+			// navBarHidden:false,
+			// backgroundColor:'#ffffff'
+		// });
+		// detailContainerWindow.add(detailView);
+		// detailContainerWindow.open();
+	// }
+	// bookmark1.addEventListener('click', moredetails);
+	// bookmark2.addEventListener('click', moredetails);
+	// bookmark3.addEventListener('click', moredetails);
+	
 //
 //  add tabs
 //
